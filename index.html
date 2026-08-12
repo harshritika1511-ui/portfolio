@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ritika Harsh — Product Manager Portfolio</title>
+  <meta name="description" content="Product Manager with 5+ years experience in EdTech, growth loops, UGC, and content platforms. Former Product Manager at Careers360.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            navy: '#172554',
+            deepblue: '#1E40AF',
+            magenta: '#DB2777',
+            orange: '#F97316',
+            iceblue: '#F0F9FF',
+            borderblue: '#BFDBFE',
+            borderlight: '#93C5FD',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom utility styles & animations */
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background-color: #FFFFFF;
+      color: #172554;
+    }
+    .header-blur {
+      background: rgba(240, 249, 255, 0.70);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid #BFDBFE;
+    }
+    .header-transparent {
+      background: transparent;
+      backdrop-filter: none;
+      -webkit-backdrop-filter: none;
+      border-bottom: 1px solid transparent;
+    }
+    
+    /* Smooth opacity transitions for view switching */
+    .page-view {
+      transition: opacity 0.3s ease-in-out;
+    }
+    .page-view.hidden {
+      display: none !important;
+      opacity: 0;
+    }
+    .page-view.active {
+      display: block !important;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-[#FFFFFF] antialiased text-[#172554]">
+
+  <!-- Header Navigation -->
+  <header id="main-nav" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 header-transparent">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+      <button onclick="navigateTo('home')" class="font-serif text-lg tracking-tight text-[#172554] hover:text-[#F97316] transition-colors focus:outline-none">
+        Ritika Harsh
+      </button>
+      
+      <nav class="flex items-center gap-8 text-sm font-medium text-[#1E40AF]">
+        <!-- Home Nav Links -->
+        <div id="nav-home-links" class="flex items-center gap-8">
+          <a href="#about" class="hover:text-[#172554] transition-colors">About</a>
+          <a href="#work" class="hover:text-[#172554] transition-colors">Work</a>
+          <a href="#contact" class="hover:text-[#172554] transition-colors">Contact</a>
+        </div>
+        
+        <!-- Case Study Nav Link (Hidden by default) -->
+        <button id="nav-back-btn" onclick="navigateTo('home')" class="hidden hover:text-[#172554] transition-colors flex items-center gap-1.5 focus:outline-none">
+          <span>←</span> Back
+        </button>
+
+        <a href="mailto:harshritika1511@gmail.com" class="bg-[#172554] text-[#F0F9FF] px-4 py-2 text-xs tracking-wide uppercase hover:bg-[#F97316] hover:-translate-y-0.5 hover:shadow-[3px_3px_0px_rgba(17,24,39,1)] transition-all duration-300">
+          Hire Me
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- VIEW: HOME -->
+  <div id="view-home" class="page-view active">
+    
+    <!-- Hero Section -->
+    <section class="min-h-screen flex flex-col justify-center pb-14 px-6 pt-28">
+      <div class="max-w-5xl mx-auto w-full mt-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-end">
+          <div class="lg:col-span-7">
+            <p class="text-xs uppercase tracking-[0.2em] text-[#F97316] font-medium mb-6">
+              Product Manager · EdTech · 5 years 8 months
+            </p>
+            <h1 class="font-serif text-6xl lg:text-8xl text-[#DB2777] leading-[0.95] mb-8">
+              Building products<br />
+              <em>people actually</em><br />
+              come back to.
+            </h1>
+            <p class="text-[#1E40AF] text-lg leading-relaxed max-w-xl mb-10">
+              I'm Ritika — a product manager at Careers360, where I've spent 5 years 8 months turning user
+              research into engagement, registrations, and revenue. I specialise in content platforms,
+              growth loops, and the messy middle between user insight and shipped product.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <a href="#work" class="bg-[#172554] text-[#F0F9FF] px-8 py-3.5 text-sm tracking-wide hover:bg-[#F97316] hover:-translate-y-1 hover:shadow-[4px_4px_0px_rgba(17,24,39,1)] transition-all duration-300">
+                See My Work
+              </a>
+              <a href="#about" class="border border-[#93C5FD] text-[#1E40AF] px-8 py-3.5 text-sm tracking-wide hover:border-[#172554] hover:text-[#172554] hover:bg-[#FFFFFF] hover:-translate-y-1 hover:shadow-[4px_4px_0px_rgba(51,51,51,1)] transition-all duration-300">
+                About Me
+              </a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 flex flex-col lg:items-end">
+            <div class="group mb-10 w-full max-w-[280px] lg:max-w-sm aspect-[3/4] p-3 border border-[#93C5FD] bg-[#F0F9FF] shadow-[4px_4px_0px_rgba(51,51,51,0.5)] transition-all duration-500 hover:border-[#F97316] hover:shadow-[8px_8px_0px_rgba(249,115,22,1)] hover:-translate-y-2 hover:rotate-1" style="border-radius: 2px;">
+              <div class="w-full h-full overflow-hidden bg-[#FFFFFF] relative" style="border-radius: 1px;">
+                <img src="./ritika_profile.png" alt="Ritika Harsh" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700" onerror="this.onerror=null; this.src='C:/Users/Ritika/.gemini/antigravity-ide/brain/f717c01d-254d-4b64-a8b6-d929607cc03d/ritika_profile_pic_1786460969140.png';">
+              </div>
+            </div>
+            
+            <div class="inline-grid grid-cols-2 gap-x-8 gap-y-6 text-left w-full max-w-[280px] lg:max-w-sm">
+              <div>
+                <div class="font-serif text-3xl text-[#DB2777]">100%</div>
+                <div class="text-xs text-[#1E40AF] mt-0.5 leading-tight">Engagement lift</div>
+              </div>
+              <div>
+                <div class="font-serif text-3xl text-[#DB2777]">3L+</div>
+                <div class="text-xs text-[#1E40AF] mt-0.5 leading-tight">Votes in 60 days</div>
+              </div>
+              <div>
+                <div class="font-serif text-3xl text-[#DB2777]">53%</div>
+                <div class="text-xs text-[#1E40AF] mt-0.5 leading-tight">Lead quality up</div>
+              </div>
+              <div>
+                <div class="font-serif text-3xl text-[#DB2777]">72%</div>
+                <div class="text-xs text-[#1E40AF] mt-0.5 leading-tight">Registrations up</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-16 border-t border-[#BFDBFE]"></div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 px-6 bg-[rgba(0,0,0,0.03)]">
+      <div class="max-w-5xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+          <div class="lg:col-span-4">
+            <p class="text-xs uppercase tracking-[0.2em] text-[#F97316] font-medium mb-4">About</p>
+            <h2 class="font-serif text-4xl text-[#DB2777] leading-tight mb-6">
+              From research<br />to roadmap<br />to results.
+            </h2>
+            <p class="text-[#1E40AF] leading-relaxed text-sm mb-6">
+              I've spent my career at Careers360 building platforms that help millions of Indian
+              students make better education decisions. My work sits at the intersection of user empathy,
+              operational scale, and measurable growth.
+            </p>
+            <p class="text-[#1E40AF] leading-relaxed text-sm mb-8">
+              I hold a PGDM in Retail Management from BIMTECH and a B.Tech from JIET. In 2025, I won
+              the internal Hackathon with the Website Performance Monitor and earned the Transformer Award
+              for cross-functional product impact.
+            </p>
+            <div class="flex flex-col gap-2">
+              <a href="mailto:harshritika1511@gmail.com" class="text-sm text-[#172554] hover:text-[#F97316] transition-colors">
+                harshritika1511@gmail.com
+              </a>
+              <a href="https://linkedin.com/in/ritika-harsh-790760129" target="_blank" rel="noreferrer" class="text-sm text-[#172554] hover:text-[#F97316] transition-colors">
+                linkedin.com/in/ritika-harsh
+              </a>
+              <span class="text-sm text-[#1E40AF]">Hyderabad, Telangana · +91 7727932313</span>
+            </div>
+          </div>
+
+          <div class="lg:col-span-8">
+            <div class="mb-8">
+              <h3 class="text-xs uppercase tracking-[0.2em] text-[#DB2777] font-medium mb-6">Core Skills</h3>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="group bg-[#FFFFFF] p-5 border border-transparent hover:border-[#F97316] hover:-translate-y-1 hover:shadow-[4px_4px_0px_rgba(249,115,22,0.2)] transition-all duration-300">
+                  <div class="text-xs font-semibold uppercase tracking-wider text-[#F97316] group-hover:text-[#F97316] transition-colors mb-2">Product</div>
+                  <p class="text-xs text-[#1E40AF] group-hover:text-[#172554] transition-colors leading-relaxed">Vision & Roadmap · Agile/Scrum · Feature Prioritisation (RICE, MoSCoW) · New Product Development · AI Enablement</p>
+                </div>
+                <div class="group bg-[#FFFFFF] p-5 border border-transparent hover:border-[#F97316] hover:-translate-y-1 hover:shadow-[4px_4px_0px_rgba(249,115,22,0.2)] transition-all duration-300">
+                  <div class="text-xs font-semibold uppercase tracking-wider text-[#F97316] group-hover:text-[#F97316] transition-colors mb-2">UX</div>
+                  <p class="text-xs text-[#1E40AF] group-hover:text-[#172554] transition-colors leading-relaxed">Wireframing · User Story Mapping · Competitor Analysis · Usability Testing · Customer-Centric Design</p>
+                </div>
+                <div class="group bg-[#FFFFFF] p-5 border border-transparent hover:border-[#F97316] hover:-translate-y-1 hover:shadow-[4px_4px_0px_rgba(249,115,22,0.2)] transition-all duration-300">
+                  <div class="text-xs font-semibold uppercase tracking-wider text-[#F97316] group-hover:text-[#F97316] transition-colors mb-2">Analytics</div>
+                  <p class="text-xs text-[#1E40AF] group-hover:text-[#172554] transition-colors leading-relaxed">Google Analytics · Funnel Analysis · A/B Testing · Redash · Jira · Figma · Clevertap · Netcore CPaaS · LSQ</p>
+                </div>
+                <div class="group bg-[#FFFFFF] p-5 border border-transparent hover:border-[#F97316] hover:-translate-y-1 hover:shadow-[4px_4px_0px_rgba(249,115,22,0.2)] transition-all duration-300">
+                  <div class="text-xs font-semibold uppercase tracking-wider text-[#F97316] group-hover:text-[#F97316] transition-colors mb-2">Leadership</div>
+                  <p class="text-xs text-[#1E40AF] group-hover:text-[#172554] transition-colors leading-relaxed">Stakeholder Management · Cross-Functional Teams · Sprint Planning · Vendor Management</p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-xs uppercase tracking-[0.2em] text-[#DB2777] font-medium mb-6">Experience</h3>
+              <div class="space-y-8">
+                <!-- Exp 1 -->
+                <div class="border-l-2 border-[#BFDBFE] pl-6 relative">
+                  <div class="absolute -left-[5px] top-1 w-2 h-2 rounded-full bg-[#F97316]"></div>
+                  <div class="flex flex-wrap items-baseline gap-x-3 gap-y-1 mb-3">
+                    <span class="font-semibold text-[#172554] text-sm">Product Manager</span>
+                    <span class="text-[#F97316] text-sm">· Careers360</span>
+                    <span class="text-[#1E40AF] text-xs ml-auto">Jul 2024 – Present</span>
+                  </div>
+                  <ul class="space-y-1.5">
+                    <li class="text-xs text-[#1E40AF] leading-relaxed flex gap-2"><span class="text-[#93C5FD] flex-shrink-0">—</span>Launched Polls & Discussions — 300K+ votes, 30K+ comments, 100% engagement uplift in 2 months</li>
+                    <li class="text-xs text-[#1E40AF] leading-relaxed flex gap-2"><span class="text-[#93C5FD] flex-shrink-0">—</span>Redesigned registration journey, improving qualified lead conversion by 53%</li>
+                    <li class="text-xs text-[#1E40AF] leading-relaxed flex gap-2"><span class="text-[#93C5FD] flex-shrink-0">—</span>Led College Compare redesign — registrations up 72%, feedback scores up 126%</li>
+                    <li class="text-xs text-[#1E40AF] leading-relaxed flex gap-2"><span class="text-[#93C5FD] flex-shrink-0">—</span>Built Companion counselling platform — 57% sales growth, 23% revenue growth</li>
+                  </ul>
+                </div>
+                <!-- Exp 2 -->
+                <div class="border-l-2 border-[#BFDBFE] pl-6 relative">
+                  <div class="absolute -left-[5px] top-1 w-2 h-2 rounded-full bg-[#F97316]"></div>
+                  <div class="flex flex-wrap items-baseline gap-x-3 gap-y-1 mb-3">
+                    <span class="font-semibold text-[#172554] text-sm">Associate Product Manager</span>
+                    <span class="text-[#F97316] text-sm">· Careers360</span>
+                    <span class="text-[#1E40AF] text-xs ml-auto">Jul 2022 – Jun 2024</span>
+                  </div>
+                  <ul class="space-y-1.5">
+                    <li class="text-xs text-[#1E40AF] leading-relaxed flex gap-2"><span class="text-[#93C5FD] flex-shrink-0">—</span>Migrated College Listing pages — organic traffic +30%, registrations +40%</li>
+                    <li class="text-xs text-[#1E40AF] leading-relaxed flex gap-2"><span class="text-[#93C5FD] flex-shrink-0">—</span>Built internal CMS enabling distributed content without engineering dependency</li>
+                    <li class="text-xs text-[#1E40AF] leading-relaxed flex gap-2"><span class="text-[#93C5FD] flex-shrink-0">—</span>Created geo-personalised recommendation engine improving content discovery</li>
+                    <li class="text-xs text-[#1E40AF] leading-relaxed flex gap-2"><span class="text-[#93C5FD] flex-shrink-0">—</span>Launched Q&A platform with AI spam detection and automated keyword tagging</li>
+                  </ul>
+                </div>
+                <!-- Exp 3 -->
+                <div class="border-l-2 border-[#BFDBFE] pl-6 relative">
+                  <div class="absolute -left-[5px] top-1 w-2 h-2 rounded-full bg-[#F97316]"></div>
+                  <div class="flex flex-wrap items-baseline gap-x-3 gap-y-1 mb-3">
+                    <span class="font-semibold text-[#172554] text-sm">Management Trainee</span>
+                    <span class="text-[#F97316] text-sm">· Careers360</span>
+                    <span class="text-[#1E40AF] text-xs ml-auto">Dec 2020 – Jun 2022</span>
+                  </div>
+                  <ul class="space-y-1.5">
+                    <li class="text-xs text-[#1E40AF] leading-relaxed flex gap-2"><span class="text-[#93C5FD] flex-shrink-0">—</span>Revamped College Detail pages with data visualisation and prioritised admission insights</li>
+                    <li class="text-xs text-[#1E40AF] leading-relaxed flex gap-2"><span class="text-[#93C5FD] flex-shrink-0">—</span>Collaborated with partners to launch psychometric career assessment platform</li>
+                    <li class="text-xs text-[#1E40AF] leading-relaxed flex gap-2"><span class="text-[#93C5FD] flex-shrink-0">—</span>Built student-facing chatbot for real-time query resolution</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="py-16 px-6">
+      <div class="max-w-5xl mx-auto">
+        <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-10">
+          <div>
+            <p class="text-xs uppercase tracking-[0.2em] text-[#F97316] font-medium mb-4">Case Studies</p>
+            <h2 class="font-serif text-4xl text-[#DB2777] leading-tight">
+              Selected work<br />in depth.
+            </h2>
+          </div>
+          <p class="text-sm text-[#1E40AF] max-w-xs">
+            End-to-end product stories — from the problem through the architecture to the numbers.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <!-- Card 1: Polls & Discussions -->
+          <div role="link" tabindex="0" aria-label="Read case study: Polls & Discussions" onclick="navigateTo('case-polls')" onkeydown="if(event.key==='Enter') navigateTo('case-polls')"
+               class="bg-[#FFFFFF] cursor-pointer group transition-all duration-300 overflow-hidden outline-none focus-visible:ring-2 focus-visible:ring-[#F97316] border border-transparent hover:border-[#F97316] hover:-translate-y-1.5 hover:shadow-[8px_8px_0px_rgba(249,115,22,0.2)]">
+            <div class="h-1 bg-[#F97316] group-hover:bg-gradient-to-r group-hover:from-[#F97316] group-hover:to-[#FDBA74] transition-all duration-300"></div>
+            <div class="p-8 lg:p-10">
+              <div class="flex items-start justify-between gap-4 mb-4">
+                <div>
+                  <span class="text-[10px] uppercase tracking-[0.18em] text-[#F97316] font-semibold">Engagement · UGC · AI</span>
+                  <h3 class="font-serif text-2xl text-[#DB2777] mt-1 leading-tight group-hover:text-[#F97316] transition-colors">Polls & Discussions</h3>
+                </div>
+                <span class="text-[#F97316] text-xl flex-shrink-0 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1">↗</span>
+              </div>
+              <p class="text-xs text-[#1E40AF] mb-1">Careers360 · Jul 2024 – Present</p>
+              <p class="text-sm text-[#1E40AF] leading-relaxed mt-4 mb-8">Built a complete UGC content system — poll CMS, AI suggestion engine, auto-scroll, and keyword-entity mapping — that generated 300K+ votes and doubled platform engagement in 60 days.</p>
+              <div class="grid grid-cols-3 gap-4 border-t border-[#BFDBFE] pt-6 mb-6">
+                <div>
+                  <div class="font-serif text-xl text-[#DB2777]">3L+</div>
+                  <div class="text-[10px] text-[#1E40AF] uppercase tracking-wide mt-0.5">Votes</div>
+                </div>
+                <div>
+                  <div class="font-serif text-xl text-[#DB2777]">30K+</div>
+                  <div class="text-[10px] text-[#1E40AF] uppercase tracking-wide mt-0.5">Comments</div>
+                </div>
+                <div>
+                  <div class="font-serif text-xl text-[#DB2777]">100%</div>
+                  <div class="text-[10px] text-[#1E40AF] uppercase tracking-wide mt-0.5">Engagement</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-[#F97316] group-hover:text-[#172554] transition-colors duration-200">
+                Read case study
+                <span class="transition-transform duration-300 group-hover:translate-x-1.5">→</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Website Performance Monitor -->
+          <div role="link" tabindex="0" aria-label="Read case study: Website Performance Monitor" onclick="navigateTo('case-monitoring')" onkeydown="if(event.key==='Enter') navigateTo('case-monitoring')"
+               class="bg-[#FFFFFF] cursor-pointer group transition-all duration-300 overflow-hidden outline-none focus-visible:ring-2 focus-visible:ring-[#F97316] border border-transparent hover:border-[#F97316] hover:-translate-y-1.5 hover:shadow-[8px_8px_0px_rgba(249,115,22,0.2)]">
+            <div class="h-1 bg-[#F97316] group-hover:bg-gradient-to-r group-hover:from-[#F97316] group-hover:to-[#FDBA74] transition-all duration-300"></div>
+            <div class="p-8 lg:p-10">
+              <div class="flex items-start justify-between gap-4 mb-4">
+                <div>
+                  <span class="text-[10px] uppercase tracking-[0.18em] text-[#F97316] font-semibold">Internal Tool · SEO · Alerts</span>
+                  <h3 class="font-serif text-2xl text-[#DB2777] mt-1 leading-tight group-hover:text-[#F97316] transition-colors">Website Performance Monitor</h3>
+                </div>
+                <span class="text-[#F97316] text-xl flex-shrink-0 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1">↗</span>
+              </div>
+              <p class="text-xs text-[#1E40AF] mb-1">Careers360 Hackathon · 2025</p>
+              <p class="text-sm text-[#1E40AF] leading-relaxed mt-4 mb-8">Won the 2025 internal hackathon by designing a centralised monitoring dashboard covering server health, SEO metrics, API performance, and page vitals with real-time team alerts and Jira integration.</p>
+              <div class="grid grid-cols-3 gap-4 border-t border-[#BFDBFE] pt-6 mb-6">
+                <div>
+                  <div class="font-serif text-xl text-[#DB2777]">4</div>
+                  <div class="text-[10px] text-[#1E40AF] uppercase tracking-wide mt-0.5">Pillars</div>
+                </div>
+                <div>
+                  <div class="font-serif text-xl text-[#DB2777]">6+</div>
+                  <div class="text-[10px] text-[#1E40AF] uppercase tracking-wide mt-0.5">Teams</div>
+                </div>
+                <div>
+                  <div class="font-serif text-xl text-[#DB2777]">🏆</div>
+                  <div class="text-[10px] text-[#1E40AF] uppercase tracking-wide mt-0.5">Winner</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-[#F97316] group-hover:text-[#172554] transition-colors duration-200">
+                Read case study
+                <span class="transition-transform duration-300 group-hover:translate-x-1.5">→</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <p class="text-xs text-[#1E40AF] mt-4 text-center">Click either card to read the full case study</p>
+
+        <!-- Other Notable Work -->
+        <div class="mt-6 border border-[#BFDBFE] p-8">
+          <h3 class="font-serif text-xl text-[#DB2777] mb-6">Other notable work</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-sm">
+            <div class="border-l border-[#93C5FD] pl-4">
+              <p class="font-medium text-[#172554] text-xs leading-snug mb-1">College Compare Redesign</p>
+              <p class="text-[10px] text-[#F97316]">+72% registrations · +126% feedback score</p>
+            </div>
+            <div class="border-l border-[#93C5FD] pl-4">
+              <p class="font-medium text-[#172554] text-xs leading-snug mb-1">Companion Counselling Platform</p>
+              <p class="text-[10px] text-[#F97316]">+57% product sales · +23% revenue</p>
+            </div>
+            <div class="border-l border-[#93C5FD] pl-4">
+              <p class="font-medium text-[#172554] text-xs leading-snug mb-1">College Listing Migration</p>
+              <p class="text-[10px] text-[#F97316]">+30% organic traffic · +40% registrations</p>
+            </div>
+            <div class="border-l border-[#93C5FD] pl-4">
+              <p class="font-medium text-[#172554] text-xs leading-snug mb-1">Registration Journey Redesign</p>
+              <p class="text-[10px] text-[#F97316]">+53% lead quality</p>
+            </div>
+            <div class="border-l border-[#93C5FD] pl-4">
+              <p class="font-medium text-[#172554] text-xs leading-snug mb-1">Q&A Platform with AI Spam Detection</p>
+              <p class="text-[10px] text-[#F97316]">Improved content quality at scale</p>
+            </div>
+            <div class="border-l border-[#93C5FD] pl-4">
+              <p class="font-medium text-[#172554] text-xs leading-snug mb-1">Geo-Personalised Recommendation Engine</p>
+              <p class="text-[10px] text-[#F97316]">Increased user engagement & discovery</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-6 bg-[rgba(0,0,0,0.03)]">
+      <div class="max-w-5xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+          <div class="lg:col-span-5">
+            <p class="text-xs uppercase tracking-[0.2em] text-[#F97316] font-medium mb-4">Contact</p>
+            <h2 class="font-serif text-4xl text-[#DB2777] leading-tight mb-6">
+              Let's talk<br />product.
+            </h2>
+            <p class="text-[#1E40AF] text-sm leading-relaxed mb-10">
+              Open to senior PM roles, advisory work, and collaborations in EdTech or consumer platforms.
+              I'm especially interested in products where user research can unlock outsized growth.
+            </p>
+            <div class="space-y-4 text-sm">
+              <div class="flex items-center gap-3">
+                <span class="w-8 h-8 bg-[#FFFFFF] flex items-center justify-center text-xs text-[#F97316]">@</span>
+                <a href="mailto:harshritika1511@gmail.com" class="text-[#172554] hover:text-[#F97316] transition-colors">
+                  harshritika1511@gmail.com
+                </a>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="w-8 h-8 bg-[#FFFFFF] flex items-center justify-center text-xs text-[#F97316]">in</span>
+                <a href="https://linkedin.com/in/ritika-harsh-790760129" target="_blank" rel="noreferrer" class="text-[#172554] hover:text-[#F97316] transition-colors">
+                  linkedin.com/in/ritika-harsh
+                </a>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="w-8 h-8 bg-[#FFFFFF] flex items-center justify-center text-xs text-[#F97316]">📍</span>
+                <span class="text-[#1E40AF]">Hyderabad, Telangana · +91 7727932313</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7">
+            <!-- Form Container -->
+            <div id="contact-form-container">
+              <form id="contact-form" onsubmit="handleContactSubmit(event)" class="space-y-5">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                  <div>
+                    <label class="text-xs uppercase tracking-widest text-[#1E40AF] block mb-2">Name</label>
+                    <input type="text" required class="w-full bg-[#FFFFFF] border-0 border-b border-[#93C5FD] focus:border-[#172554] px-0 py-3 text-sm text-[#172554] placeholder-[#93C5FD] outline-none transition-colors" placeholder="Your name">
+                  </div>
+                  <div>
+                    <label class="text-xs uppercase tracking-widest text-[#1E40AF] block mb-2">Email</label>
+                    <input type="email" required class="w-full bg-[#FFFFFF] border-0 border-b border-[#93C5FD] focus:border-[#172554] px-0 py-3 text-sm text-[#172554] placeholder-[#93C5FD] outline-none transition-colors" placeholder="your@email.com">
+                  </div>
+                </div>
+                <div>
+                  <label class="text-xs uppercase tracking-widest text-[#1E40AF] block mb-2">Message</label>
+                  <textarea required rows="5" class="w-full bg-[#FFFFFF] border-0 border-b border-[#93C5FD] focus:border-[#172554] px-0 py-3 text-sm text-[#172554] placeholder-[#93C5FD] outline-none transition-colors resize-none" placeholder="Tell me about the role or project…"></textarea>
+                </div>
+                <button type="submit" class="bg-[#172554] text-[#F0F9FF] px-10 py-3.5 text-sm tracking-wide hover:bg-[#F97316] transition-colors">
+                  Send Message
+                </button>
+              </form>
+            </div>
+
+            <!-- Success Message (Hidden by default) -->
+            <div id="contact-success" class="hidden bg-[#FFFFFF] p-10 flex flex-col items-start justify-center h-full min-h-64">
+              <div class="text-3xl mb-4">✓</div>
+              <h3 class="font-serif text-2xl text-[#DB2777] mb-2">Message received.</h3>
+              <p class="text-sm text-[#1E40AF]">I'll be in touch within a day or two.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-[#BFDBFE] py-10 px-6">
+      <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+        <button onclick="navigateTo('home')" class="font-serif text-lg text-[#172554] hover:text-[#F97316] transition-colors focus:outline-none">
+          Ritika Harsh
+        </button>
+        <p class="text-xs text-[#1E40AF]">Product Manager · Gurgaon · 2026</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- VIEW: CASE STUDY - POLLS & DISCUSSIONS -->
+  <div id="view-case-polls" class="page-view hidden">
+    <article class="pt-32 pb-24 px-6">
+      <div class="max-w-3xl mx-auto">
+        <div class="mb-16">
+          <p class="text-xs uppercase tracking-[0.2em] text-[#F97316] font-medium mb-4">
+            Case Study · Careers360 · Jul 2024 – Present
+          </p>
+          <h1 class="font-serif text-5xl lg:text-6xl text-[#DB2777] leading-[0.95] mb-6">
+            Polls &<br />Discussions
+          </h1>
+          <p class="text-xl text-[#1E40AF] leading-relaxed max-w-2xl">
+            A complete UGC content creation and distribution system that generated 300,000+ votes
+            and doubled platform engagement — built lean enough to run without ongoing editorial effort.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-3 gap-6 mb-20 border-y border-[#BFDBFE] py-10">
+          <div>
+            <div class="font-serif text-4xl text-[#DB2777]">3L+</div>
+            <div class="text-xs text-[#1E40AF] mt-1">Total votes (2 months)</div>
+          </div>
+          <div>
+            <div class="font-serif text-4xl text-[#DB2777]">30K+</div>
+            <div class="text-xs text-[#1E40AF] mt-1">User comments</div>
+          </div>
+          <div>
+            <div class="font-serif text-4xl text-[#DB2777]">100%</div>
+            <div class="text-xs text-[#1E40AF] mt-1">Engagement lift</div>
+          </div>
+        </div>
+
+        <section class="mb-16">
+          <h2 class="font-serif text-2xl text-[#DB2777] mb-4">The Problem</h2>
+          <div class="w-8 h-0.5 bg-[#F97316] mb-6"></div>
+          <p class="text-[#1E40AF] leading-relaxed mb-4">
+            Careers360 had strong informational content but pages were largely static, resulting in low dwell time,
+            minimal return visits, and weak signals for search engine indexing.
+          </p>
+          <p class="text-[#1E40AF] leading-relaxed">
+            Manually creating and mapping polls to the right pages at the right time was effort-intensive,
+            making it difficult to scale across hundreds of exam, college, and result pages simultaneously.
+          </p>
+        </section>
+
+        <section class="mb-16">
+          <h2 class="font-serif text-2xl text-[#DB2777] mb-4">My Role</h2>
+          <div class="w-8 h-0.5 bg-[#F97316] mb-6"></div>
+          <p class="text-[#1E40AF] leading-relaxed">
+            As Product Manager, I owned end-to-end delivery — from identifying the opportunity through user
+            research and competitive analysis, to defining requirements for the poll CMS, AI suggestion engine,
+            auto-scroll behaviour, and entity mapping logic, through to working with engineering and design on
+            execution and monitoring post-launch KPIs.
+          </p>
+        </section>
+
+        <section class="mb-16">
+          <h2 class="font-serif text-2xl text-[#DB2777] mb-4">Key Insights</h2>
+          <div class="w-8 h-0.5 bg-[#F97316] mb-8"></div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="bg-[#FFFFFF] p-6">
+              <h3 class="text-xs font-semibold uppercase tracking-wider text-[#DB2777] mb-2">User Research</h3>
+              <p class="text-xs text-[#1E40AF] leading-relaxed">Students actively sought peer validation for exam and college decisions on external platforms — confirming latent demand for opinion tools Careers360 could own natively.</p>
+            </div>
+            <div class="bg-[#FFFFFF] p-6">
+              <h3 class="text-xs font-semibold uppercase tracking-wider text-[#DB2777] mb-2">Platform Behaviour</h3>
+              <p class="text-xs text-[#1E40AF] leading-relaxed">Pages with interactive elements had significantly higher dwell time and lower bounce rates than static pages — polls presented a low-friction path to engagement.</p>
+            </div>
+            <div class="bg-[#FFFFFF] p-6">
+              <h3 class="text-xs font-semibold uppercase tracking-wider text-[#DB2777] mb-2">Operational Reality</h3>
+              <p class="text-xs text-[#1E40AF] leading-relaxed">Manual scaling would require unsustainable editorial bandwidth. Building an AI suggestion engine was the only path to quality at scale.</p>
+            </div>
+            <div class="bg-[#FFFFFF] p-6">
+              <h3 class="text-xs font-semibold uppercase tracking-wider text-[#DB2777] mb-2">Search Signal</h3>
+              <p class="text-xs text-[#1E40AF] leading-relaxed">UGC — especially comments tied to specific exams and colleges — generates long-tail keywords that improve crawl frequency and ranking.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-16">
+          <h2 class="font-serif text-2xl text-[#DB2777] mb-4">Product Architecture</h2>
+          <div class="w-8 h-0.5 bg-[#F97316] mb-8"></div>
+          <div class="space-y-6">
+            <div class="flex gap-6 border-b border-[#BFDBFE] pb-6">
+              <span class="font-serif text-3xl text-[#93C5FD] flex-shrink-0 leading-none">01</span>
+              <div>
+                <h3 class="font-semibold text-[#DB2777] text-sm mb-2">Poll Creation CMS</h3>
+                <p class="text-xs text-[#1E40AF] leading-relaxed">A dedicated internal CMS for the editorial team to create, schedule, and publish polls without engineering involvement — with configurable questions, answer options, target entities, and display rules.</p>
+              </div>
+            </div>
+            <div class="flex gap-6 border-b border-[#BFDBFE] pb-6">
+              <span class="font-serif text-3xl text-[#93C5FD] flex-shrink-0 leading-none">02</span>
+              <div>
+                <h3 class="font-semibold text-[#DB2777] text-sm mb-2">AI Poll Suggester</h3>
+                <p class="text-xs text-[#1E40AF] leading-relaxed">An AI-powered suggestion engine integrated into the CMS. Based on the target entity (exam, college, article), it suggested contextually relevant questions and answer options — reducing creation time from hours to minutes.</p>
+              </div>
+            </div>
+            <div class="flex gap-6 border-b border-[#BFDBFE] pb-6">
+              <span class="font-serif text-3xl text-[#93C5FD] flex-shrink-0 leading-none">03</span>
+              <div>
+                <h3 class="font-semibold text-[#DB2777] text-sm mb-2">Auto-Scroll & Sequential Discovery</h3>
+                <p class="text-xs text-[#1E40AF] leading-relaxed">Polls auto-scrolled to the next in sequence without manual interaction, extending session depth and increasing total votes per visit by mimicking familiar social-scroll behaviour.</p>
+              </div>
+            </div>
+            <div class="flex gap-6 border-b border-[#BFDBFE] pb-6">
+              <span class="font-serif text-3xl text-[#93C5FD] flex-shrink-0 leading-none">04</span>
+              <div>
+                <h3 class="font-semibold text-[#DB2777] text-sm mb-2">Keyword & Entity Mapping</h3>
+                <p class="text-xs text-[#1E40AF] leading-relaxed">Each poll was mapped to entities and keywords, enabling automatic surfacing on relevant pages. A fallback keyword-based auto-fetch ensured no page was ever left without an active poll — making distribution self-sustaining.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-16">
+          <h2 class="font-serif text-2xl text-[#DB2777] mb-4">Outcomes</h2>
+          <div class="w-8 h-0.5 bg-[#F97316] mb-8"></div>
+          <div class="divide-y divide-[#BFDBFE]">
+            <div class="grid grid-cols-2 gap-8 py-4">
+              <span class="text-xs text-[#1E40AF] font-medium uppercase tracking-wide">Total votes</span>
+              <span class="text-sm text-[#172554]">3,00,000+ in 2 months</span>
+            </div>
+            <div class="grid grid-cols-2 gap-8 py-4">
+              <span class="text-xs text-[#1E40AF] font-medium uppercase tracking-wide">Comments generated</span>
+              <span class="text-sm text-[#172554]">30,000+</span>
+            </div>
+            <div class="grid grid-cols-2 gap-8 py-4">
+              <span class="text-xs text-[#1E40AF] font-medium uppercase tracking-wide">Platform engagement</span>
+              <span class="text-sm text-[#172554]">↑ 100%</span>
+            </div>
+            <div class="grid grid-cols-2 gap-8 py-4">
+              <span class="text-xs text-[#1E40AF] font-medium uppercase tracking-wide">Page performance</span>
+              <span class="text-sm text-[#172554]">Improved dwell time, return visits, session depth</span>
+            </div>
+            <div class="grid grid-cols-2 gap-8 py-4">
+              <span class="text-xs text-[#1E40AF] font-medium uppercase tracking-wide">Search visibility</span>
+              <span class="text-sm text-[#172554]">Improved indexing via continuous UGC</span>
+            </div>
+            <div class="grid grid-cols-2 gap-8 py-4">
+              <span class="text-xs text-[#1E40AF] font-medium uppercase tracking-wide">Operational efficiency</span>
+              <span class="text-sm text-[#172554]">Poll creation time cut from hours to minutes</span>
+            </div>
+            <div class="grid grid-cols-2 gap-8 py-4">
+              <span class="text-xs text-[#1E40AF] font-medium uppercase tracking-wide">Platform coverage</span>
+              <span class="text-sm text-[#172554]">100% via auto-fetch, no manual placement</span>
+            </div>
+            <div class="grid grid-cols-2 gap-8 py-4">
+              <span class="text-xs text-[#1E40AF] font-medium uppercase tracking-wide">Lead quality impact</span>
+              <span class="text-sm text-[#172554]">Higher engagement → improved registrations</span>
+            </div>
+          </div>
+        </section>
+
+        <div class="bg-[#172554] text-[#F0F9FF] p-8">
+          <p class="font-serif text-lg italic leading-relaxed opacity-80">
+            "Polls and Discussions demonstrated that user-generated content — when designed around real
+            student anxieties, operationally scalable for the team, and intelligently distributed — can drive
+            outsized results with minimal ongoing effort."
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="border-t border-[#BFDBFE] py-10 px-6">
+      <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+        <button onclick="navigateTo('home')" class="font-serif text-lg text-[#172554] hover:text-[#F97316] transition-colors focus:outline-none">
+          Ritika Harsh
+        </button>
+        <p class="text-xs text-[#1E40AF]">Product Manager · Gurgaon · 2026</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- VIEW: CASE STUDY - WEBSITE PERFORMANCE MONITOR -->
+  <div id="view-case-monitoring" class="page-view hidden">
+    <article class="pt-32 pb-24 px-6">
+      <div class="max-w-3xl mx-auto">
+        <div class="mb-16">
+          <p class="text-xs uppercase tracking-[0.2em] text-[#F97316] font-medium mb-4">
+            Case Study · Hackathon Winner · 2025
+          </p>
+          <h1 class="font-serif text-5xl lg:text-6xl text-[#DB2777] leading-[0.95] mb-6">
+            Website<br />Performance<br />Monitor
+          </h1>
+          <p class="text-xl text-[#1E40AF] leading-relaxed max-w-2xl">
+            A centralised internal dashboard covering server health, SEO metrics, API performance,
+            and page vitals — with real-time team alerts and direct Jira ticket-raising. Won the
+            2025 internal Technologiaa Hackathon.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-3 gap-6 mb-20 border-y border-[#BFDBFE] py-10">
+          <div>
+            <div class="font-serif text-4xl text-[#DB2777]">4</div>
+            <div class="text-xs text-[#1E40AF] mt-1">Monitoring pillars</div>
+          </div>
+          <div>
+            <div class="font-serif text-4xl text-[#DB2777]">6+</div>
+            <div class="text-xs text-[#1E40AF] mt-1">Teams served</div>
+          </div>
+          <div>
+            <div class="font-serif text-4xl text-[#DB2777]">🏆</div>
+            <div class="text-xs text-[#1E40AF] mt-1">Hackathon winner 2025</div>
+          </div>
+        </div>
+
+        <section class="mb-16">
+          <h2 class="font-serif text-2xl text-[#DB2777] mb-4">The Problem</h2>
+          <div class="w-8 h-0.5 bg-[#F97316] mb-6"></div>
+          <p class="text-[#1E40AF] leading-relaxed mb-4">
+            Teams lacked a centralised view of website health and performance. Current methods were fragmented
+            across tools, resulting in inefficiencies in identifying SEO, content, server, or API-related issues.
+          </p>
+          <p class="text-[#1E40AF] leading-relaxed">
+            There was no monitoring and alert system to reduce reaction time when issues arose — teams were
+            reactive, not proactive, and had no direct path from detection to ticket creation.
+          </p>
+        </section>
+
+        <section class="mb-16">
+          <h2 class="font-serif text-2xl text-[#DB2777] mb-4">Solution</h2>
+          <div class="w-8 h-0.5 bg-[#F97316] mb-6"></div>
+          <p class="text-[#1E40AF] leading-relaxed mb-4">
+            The Website Performance Monitor is designed as a centralised hub for real-time analysis —
+            enabling internal teams to proactively identify improvement areas and receive instant alerts for
+            anomalies across four pillars: Server Performance, SEO Performance, API Performance, and Page Metrics.
+          </p>
+          <p class="text-[#1E40AF] leading-relaxed">
+            Its key differentiator is the combination of monitoring + alerting + direct ticket-raising, eliminating
+            the mediator step between detection and resolution.
+          </p>
+        </section>
+
+        <section class="mb-16">
+          <h2 class="font-serif text-2xl text-[#DB2777] mb-4">Target Audiences</h2>
+          <div class="w-8 h-0.5 bg-[#F97316] mb-8"></div>
+          <div class="divide-y divide-[#BFDBFE]">
+            <div class="grid grid-cols-3 gap-6 py-4">
+              <span class="text-xs font-semibold text-[#F97316] uppercase tracking-wide">SEO Team</span>
+              <span class="text-xs text-[#1E40AF] col-span-2 leading-relaxed">Track indexing, crawling, user activity, and domain-level traffic</span>
+            </div>
+            <div class="grid grid-cols-3 gap-6 py-4">
+              <span class="text-xs font-semibold text-[#F97316] uppercase tracking-wide">Content Team</span>
+              <span class="text-xs text-[#1E40AF] col-span-2 leading-relaxed">Monitor content compliance and detect guideline violations</span>
+            </div>
+            <div class="grid grid-cols-3 gap-6 py-4">
+              <span class="text-xs font-semibold text-[#F97316] uppercase tracking-wide">Technology Team</span>
+              <span class="text-xs text-[#1E40AF] col-span-2 leading-relaxed">Assess site speed, server health, and API response times</span>
+            </div>
+            <div class="grid grid-cols-3 gap-6 py-4">
+              <span class="text-xs font-semibold text-[#F97316] uppercase tracking-wide">Product Team</span>
+              <span class="text-xs text-[#1E40AF] col-span-2 leading-relaxed">Measure engagement, prioritise fixes, monitor traffic trends</span>
+            </div>
+            <div class="grid grid-cols-3 gap-6 py-4">
+              <span class="text-xs font-semibold text-[#F97316] uppercase tracking-wide">Management</span>
+              <span class="text-xs text-[#1E40AF] col-span-2 leading-relaxed">Consolidated strategic oversight and cross-functional insights</span>
+            </div>
+            <div class="grid grid-cols-3 gap-6 py-4">
+              <span class="text-xs font-semibold text-[#F97316] uppercase tracking-wide">QA Team</span>
+              <span class="text-xs text-[#1E40AF] col-span-2 leading-relaxed">Identify response time issues for quick bug reporting</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-16">
+          <h2 class="font-serif text-2xl text-[#DB2777] mb-4">Key Features</h2>
+          <div class="w-8 h-0.5 bg-[#F97316] mb-8"></div>
+          <div class="space-y-5">
+            <div class="flex gap-6 border-b border-[#BFDBFE] pb-5">
+              <span class="font-serif text-2xl text-[#93C5FD] flex-shrink-0 w-8 leading-none">01</span>
+              <div>
+                <h3 class="font-semibold text-[#DB2777] text-sm mb-1.5">Server Status Dashboard</h3>
+                <p class="text-xs text-[#1E40AF] leading-relaxed">At-a-glance operational status of all servers (Online, Offline, Errors). First section users see on access — instant infrastructure health for technical teams.</p>
+              </div>
+            </div>
+            <div class="flex gap-6 border-b border-[#BFDBFE] pb-5">
+              <span class="font-serif text-2xl text-[#93C5FD] flex-shrink-0 w-8 leading-none">02</span>
+              <div>
+                <h3 class="font-semibold text-[#DB2777] text-sm mb-1.5">SEO Analytics Section</h3>
+                <p class="text-xs text-[#1E40AF] leading-relaxed">Visualises Active Users, Total Views, Total Users, Average Engagement plus real-time graphs for Crawl Requests and Page Response Times.</p>
+              </div>
+            </div>
+            <div class="flex gap-6 border-b border-[#BFDBFE] pb-5">
+              <span class="font-serif text-2xl text-[#93C5FD] flex-shrink-0 w-8 leading-none">03</span>
+              <div>
+                <h3 class="font-semibold text-[#DB2777] text-sm mb-1.5">Page Performance Section</h3>
+                <p class="text-xs text-[#1E40AF] leading-relaxed">Published pages count, response times, and unavailability data — presented in block format for quick identification of underperforming pages.</p>
+              </div>
+            </div>
+            <div class="flex gap-6 border-b border-[#BFDBFE] pb-5">
+              <span class="font-serif text-2xl text-[#93C5FD] flex-shrink-0 w-8 leading-none">04</span>
+              <div>
+                <h3 class="font-semibold text-[#DB2777] text-sm mb-1.5">Pages Overview + Insights</h3>
+                <p class="text-xs text-[#1E40AF] leading-relaxed">SEO ratings per page with drill-down via Analyze. Actions: Visit page, auto-raise Jira ticket, or deep-dive into the Page Insights section.</p>
+              </div>
+            </div>
+            <div class="flex gap-6 border-b border-[#BFDBFE] pb-5">
+              <span class="font-serif text-2xl text-[#93C5FD] flex-shrink-0 w-8 leading-none">05</span>
+              <div>
+                <h3 class="font-semibold text-[#DB2777] text-sm mb-1.5">API Analytics Section</h3>
+                <p class="text-xs text-[#1E40AF] leading-relaxed">Most recent API hits across all domains with dynamic graphs visualising frequency and trends — enabling backend teams to spot anomalies and traffic spikes.</p>
+              </div>
+            </div>
+            <div class="flex gap-6 border-b border-[#BFDBFE] pb-5">
+              <span class="font-serif text-2xl text-[#93C5FD] flex-shrink-0 w-8 leading-none">06</span>
+              <div>
+                <h3 class="font-semibold text-[#DB2777] text-sm mb-1.5">Alert System</h3>
+                <p class="text-xs text-[#1E40AF] leading-relaxed">Auto-email/Slack alerts for anomalies and guideline breaches with threshold-based triggers (e.g., index ratio drop, crawl anomaly, traffic dip).</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-16">
+          <h2 class="font-serif text-2xl text-[#DB2777] mb-4">Tech Stack</h2>
+          <div class="w-8 h-0.5 bg-[#F97316] mb-8"></div>
+          <div class="grid grid-cols-3 gap-4">
+            <div class="bg-[#FFFFFF] p-4 border border-[#BFDBFE]/50">
+              <div class="text-[10px] uppercase tracking-widest text-[#F97316] mb-1">Frontend</div>
+              <div class="text-xs text-[#172554] font-medium">React 19 + Redux Toolkit</div>
+            </div>
+            <div class="bg-[#FFFFFF] p-4 border border-[#BFDBFE]/50">
+              <div class="text-[10px] uppercase tracking-widest text-[#F97316] mb-1">Backend</div>
+              <div class="text-xs text-[#172554] font-medium">Python (Django + DRF)</div>
+            </div>
+            <div class="bg-[#FFFFFF] p-4 border border-[#BFDBFE]/50">
+              <div class="text-[10px] uppercase tracking-widest text-[#F97316] mb-1">Database</div>
+              <div class="text-xs text-[#172554] font-medium">MySQL</div>
+            </div>
+            <div class="bg-[#FFFFFF] p-4 border border-[#BFDBFE]/50">
+              <div class="text-[10px] uppercase tracking-widest text-[#F97316] mb-1">Architecture</div>
+              <div class="text-xs text-[#172554] font-medium">Microservices</div>
+            </div>
+            <div class="bg-[#FFFFFF] p-4 border border-[#BFDBFE]/50">
+              <div class="text-[10px] uppercase tracking-widest text-[#F97316] mb-1">Alerts</div>
+              <div class="text-xs text-[#172554] font-medium">Slack / Gmail webhooks</div>
+            </div>
+            <div class="bg-[#FFFFFF] p-4 border border-[#BFDBFE]/50">
+              <div class="text-[10px] uppercase tracking-widest text-[#F97316] mb-1">Task Runner</div>
+              <div class="text-xs text-[#172554] font-medium">CRON / Celery Beat</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-16">
+          <h2 class="font-serif text-2xl text-[#DB2777] mb-4">Future Scope</h2>
+          <div class="w-8 h-0.5 bg-[#F97316] mb-8"></div>
+          <div class="space-y-3">
+            <div class="flex gap-3 text-sm text-[#1E40AF]">
+              <span class="text-[#F97316] flex-shrink-0">→</span>
+              Auto-generation of JIRA tickets for critical issues (e.g., index ratio &lt; 80%, &gt;10% pages failing Core Web Vitals)
+            </div>
+            <div class="flex gap-3 text-sm text-[#1E40AF]">
+              <span class="text-[#F97316] flex-shrink-0">→</span>
+              CMS-integrated validations to prevent flawed content submissions at source
+            </div>
+            <div class="flex gap-3 text-sm text-[#1E40AF]">
+              <span class="text-[#F97316] flex-shrink-0">→</span>
+              Monthly automated performance reports distributed to stakeholders on the 1st of each month
+            </div>
+            <div class="flex gap-3 text-sm text-[#1E40AF]">
+              <span class="text-[#F97316] flex-shrink-0">→</span>
+              Enhanced Core Web Vitals analysis with per-page LCP, INP, and CLS colour-coded breakdowns
+            </div>
+          </div>
+        </section>
+
+        <div class="bg-[#172554] text-[#F0F9FF] p-8">
+          <p class="font-serif text-lg italic leading-relaxed opacity-80">
+            "The monitor eliminates the mediator between detection and resolution — so the right team
+            gets the right alert and can raise a ticket in seconds, not hours."
+          </p>
+          <p class="text-xs opacity-50 mt-4">Team Technologiaa · Ritika (Product) · Angad, Prashant, Tushar, Mohit, Aryaman (Dev) · Shrey, Satyam, Gambhir (QA)</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="border-t border-[#BFDBFE] py-10 px-6">
+      <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+        <button onclick="navigateTo('home')" class="font-serif text-lg text-[#172554] hover:text-[#F97316] transition-colors focus:outline-none">
+          Ritika Harsh
+        </button>
+        <p class="text-xs text-[#1E40AF]">Product Manager · Gurgaon · 2026</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- JavaScript Logic for Navigation, Header Scroll, and Form -->
+  <script>
+    // State management for view navigation
+    function navigateTo(pageId) {
+      // Hide all page views
+      const views = document.querySelectorAll('.page-view');
+      views.forEach(v => {
+        v.classList.remove('active');
+        v.classList.add('hidden');
+      });
+
+      // Show selected page view
+      const targetView = document.getElementById('view-' + pageId);
+      if (targetView) {
+        targetView.classList.remove('hidden');
+        targetView.classList.add('active');
+      }
+
+      // Update Nav links
+      const navHomeLinks = document.getElementById('nav-home-links');
+      const navBackBtn = document.getElementById('nav-back-btn');
+      
+      if (pageId === 'home') {
+        navHomeLinks.classList.remove('hidden');
+        navBackBtn.classList.add('hidden');
+      } else {
+        navHomeLinks.classList.add('hidden');
+        navBackBtn.classList.remove('hidden');
+      }
+
+      // Scroll to top
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Scroll listener for sticky header styling
+    window.addEventListener('scroll', function() {
+      const header = document.getElementById('main-nav');
+      if (window.scrollY > 40) {
+        header.classList.remove('header-transparent');
+        header.classList.add('header-blur');
+      } else {
+        header.classList.remove('header-blur');
+        header.classList.add('header-transparent');
+      }
+    }, { passive: true });
+
+    // Contact form handling
+    function handleContactSubmit(event) {
+      event.preventDefault();
+      document.getElementById('contact-form-container').classList.add('hidden');
+      document.getElementById('contact-success').classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
