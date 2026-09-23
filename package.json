@@ -1,0 +1,24 @@
+{
+  "name": "primary",
+  "version": "1.0.0",
+  "description": "product portfolio",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx serve .",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harshritika1511-ui/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harshritika1511-ui/portfolio/issues"
+  },
+  "homepage": "https://github.com/harshritika1511-ui/portfolio#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
